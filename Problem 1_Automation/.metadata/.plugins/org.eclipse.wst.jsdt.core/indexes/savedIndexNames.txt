@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+F:\Automation Test BS23\Problem 1_Automation\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1263810336.index
+774866087.index
+2759761995.index
+3131072833.index
+2607483763.index
+2089224519.index

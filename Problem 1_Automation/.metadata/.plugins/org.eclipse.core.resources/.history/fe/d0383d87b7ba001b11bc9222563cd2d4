@@ -1,0 +1,18 @@
+package scenarios;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Scenario2_RegWithTwoUser {
+public static void main(String[] args) {
+		
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver= new FirefoxDriver();
+		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+		driver.findElement(By.xpath("//input[@id='email_create']")).sendKeys("mfvskvyawpeiewgmjj@kiabws.com");
+		
+	}
+}

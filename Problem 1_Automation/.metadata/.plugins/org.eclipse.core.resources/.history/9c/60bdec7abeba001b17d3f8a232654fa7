@@ -1,0 +1,65 @@
+package scenarios;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Scenario2_RegWithTwoUser {
+public static void main(String[] args) {
+		
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver= new FirefoxDriver();
+		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+		
+		// Registration for user one
+		driver.findElement(By.xpath("//input[@id='email_create']")).sendKeys("mfvskvyawpeiewgmjj@kiabws.com");
+		driver.findElement(By.xpath("//body[@id='authentication']/div[@id='page']/div[@class='columns-container']/div[@id='columns']/div[@class='row']/div[@id='center_column']/div[@class='row']/div[@class='col-xs-12 col-sm-6']/form[@id='create-account_form']/div[@class='form_content clearfix']/div[@class='submit']/button[@id='SubmitCreate']/span[1]")).click();
+		
+		// Title
+		driver.findElement(By.xpath("//div[@id='uniform-id_gender1']")).click();
+		
+		// First Name
+		/*driver.findElement(By.xpath("//input[@id='customer_firstname']")).sendKeys("Samoa");
+		
+		// Last Name
+		driver.findElement(By.xpath("//input[@id='customer_lastname']")).sendKeys("Joe");
+		
+		// Password
+		driver.findElement(By.xpath("//input[@id='passwd']")).sendKeys("Abc20202020");
+		
+		// Address First Name
+		driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys("Uk");
+		
+		// Last Name
+		driver.findElement(By.xpath("//input[@id='lastname']")).sendKeys("Nation");
+		
+		// Company
+		driver.findElement(By.xpath("//input[@id='company']")).sendKeys("Deep");
+		
+		// Address
+		driver.findElement(By.xpath("//input[@id='address1']")).sendKeys("Newyork");
+		
+		// address 2
+		driver.findElement(By.xpath("//input[@id='address2']")).sendKeys("Lords");
+		
+		// city
+		driver.findElement(By.xpath("//input[@id='city']")).sendKeys("Sydeny");
+		
+		// Zip code
+		driver.findElement(By.xpath("//input[@id='postcode']")).sendKeys("1000");
+		
+		// Addition info
+		driver.findElement(By.xpath("//textarea[@id='other']")).sendKeys("Nothing");
+		
+		// Home phone
+		driver.findElement(By.xpath("//input[@id='phone']")).sendKeys("1234");
+		
+		// Mobile Phone
+		driver.findElement(By.xpath("//input[@id='phone_mobile']")).sendKeys("4567");
+		
+		// My address
+		driver.findElement(By.xpath("//input[@id='alias']")).sendKeys("England");*/
+	}
+}
